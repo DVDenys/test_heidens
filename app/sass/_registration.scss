@@ -1,0 +1,120 @@
+.registration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: $color-white;
+    background-color: $color-black;
+    padding: 185px 0;
+
+    @media screen and (max-width: 1000px) {
+        padding: 100px 0;
+    }
+}
+
+.registration__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: $spacing-ultra-small * 2;
+    max-width: 952px;
+    width: 100%;
+    color: $color-silver;
+
+    @media screen and (max-width: 375px) {
+        padding: $spacing-small;
+    }
+}
+
+.registration__title {
+    @include title;
+}
+
+.registration__box {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1000px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+.registration__sub-title {
+    font-size: 88px;
+    line-height: 100%;
+    font-weight: 400;
+    max-width: 250px;
+
+    @media screen and (max-width: 1000px) {
+        max-width: fit-content;
+        margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 58px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 36px;
+    }
+}
+
+.registration__steep-list {
+    padding-top: $spacing-small;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: $spacing-large;
+}
+
+.steep-list {}
+
+.registration__steep-list_item {
+    display: flex;
+    column-gap: 40px;
+
+    img {
+        width: 40px;
+    }
+
+}
+
+.steep-list__item {}
+
+.steep-list__text-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.steep-list__text-box_title {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 111%;
+
+    @media screen and (max-width: 768px) {
+        font-size: 27px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 22px;
+    }
+}
+
+.steep-list__text-box-text {
+    max-width: 284px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+
+    @media screen and (max-width: 480px) {
+        font-size: 18px;
+    }
+}

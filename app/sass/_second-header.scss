@@ -1,0 +1,106 @@
+.second-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &::after {
+        content: '';
+        display: inline-block;
+        min-height: 510px;
+        width: 100%;
+        background-image: -webkit-image-set(url('../img/image-bg.jpg') 1x,
+                url('../img/image-bg@2x.jpg') 2x,
+            );
+        background-repeat: no-repeat;
+        background-position: center top;
+        margin-top: -70px; //краще марджином задати відємний відступ
+        z-index: -1;
+        // box-shadow: -0px -2px 7px 0 rgba(0, 0, 0, 0.03), -0px -10px 25px 0 rgba(0, 0, 0, 0.04), -1px -25px 80px 0 rgba(0, 0, 0, 0.07);
+    }
+
+    @media screen and (max-width: 1080px) {
+        &::after {
+            display: none;
+        }
+
+        margin-bottom: 50px;
+    }
+}
+
+.second-header__title {
+    font-weight: 500;
+    font-size: 88px;
+    text-align: center;
+}
+
+.title {
+    margin-top: $spacing-large * 3;
+    font-weight: 500;
+    font-size: 88px;
+    max-width: 1090px;
+
+    &__color-accent {
+        color: $color-accent;
+        display: inline-block;
+    }
+
+    &__font-accent {
+        font-family: "SF Mono", sans-serif;
+    }
+
+    @media screen and (max-width: 1080px) {
+        font-size: 60px;
+        margin-top: $spacing-large * 2;
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 40px;
+        margin-top: $spacing-large;
+    }
+}
+
+.second-header__sub-title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    color: $color-dark-gray;
+    text-align: center;
+    margin: $spacing-medium 0;
+
+    @media screen and (max-width: 768px) {
+        font-size: 18px;
+    }
+}
+
+.second-header__subscribe-box {}
+
+.subscribe-box {
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: $spacing-small;
+
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+
+    input {
+        padding: 20px;
+        border: 1px solid $color-light-gray;
+        border-radius: $border-radius;
+
+        &::placeholder {
+            color: $color-dark-gray;
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+
+    button {
+        @include submit-btn($color-black);
+    }
+}

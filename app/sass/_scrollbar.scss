@@ -1,0 +1,28 @@
+/***************************************************
+SCROLL
+/***************************************************/
+
+/* Firefox */
+* {
+    scrollbar-color: rgb(34, 34, 34);
+    scrollbar-width: thin;
+}
+
+/* Chrome */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(34, 34, 34);
+    border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, .7);
+}
+
+::-webkit-scrollbar-corner {
+    background-color: rgba(0, 0, 0, .7);
+}
