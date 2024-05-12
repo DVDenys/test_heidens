@@ -160,7 +160,7 @@
 				<div class="reviews__content">
 					<h3 class="reviews__title">Reviews</h3>
 					<h4 class="reviews__sub-title">Our clients about us</h4>
-					<div class="reviews__slider-wrapper slider">
+					<!-- <div class="reviews__slider-wrapper slider">
 						<ul class="slider__list">
 							<li class="slider__item">
 								<img src="./img/user1.png" alt="user icon">
@@ -206,6 +206,78 @@
 							</li>
 						</ul>
 
+					</div> -->
+					<div class="swiper">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide">
+								<article class="slider__item">
+									<img src="./img/user3.png" alt="user icon">
+									<p class="slider__item_user-name">Kevin Smith</p>
+									<p class="slider__item_user-reviews">“A professional approach and reliable support
+										are
+										what makes it the best investment partner.”</p>
+										<div class="slider__controls">
+											<div class="swiper-prev">
+												<button class="slider-btn prev">
+													<img src="./img/icon-arrow.svg" alt="prev slide">
+												</button>
+											</div>
+											<div class="swiper-next">
+												<button class="slider-btn next">
+													<img src="./img/icon-arrow.svg" alt="next slide">
+												</button>
+											</div>
+										</div>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="slider__item active">
+									<img src="./img/user2.png" alt="user icon">
+									<p class="slider__item_user-name">Tom Jones</p>
+									<p class="slider__item_user-reviews">“WealthGr0w has changed my perception of
+										investing.
+										It is incredibly convenient and profitable!”</p>
+										<div class="slider__controls">
+											<div class="swiper-prev">
+												<button class="slider-btn prev">
+													<img src="./img/icon-arrow.svg" alt="prev slide">
+												</button>
+											</div>
+											<div class="swiper-next">
+												<button class="slider-btn next">
+													<img src="./img/icon-arrow.svg" alt="next slide">
+												</button>
+											</div>
+										</div>
+								</article>
+							</div>
+							<div class="swiper-slide">
+								<article class="slider__item">
+									<img src="./img/user1.png" alt="user icon">
+									<p class="slider__item_user-name">Lisa Campbell</p>
+									<p class="slider__item_user-reviews">“Thanks to WealthGr0w, I started earning on my
+										investments without even picking up financial literature”</p>
+										<div class="slider__controls">
+											<div class="swiper-prev">
+												<button class="slider-btn prev">
+													<img src="./img/icon-arrow.svg" alt="prev slide">
+												</button>
+											</div>
+											<div class="swiper-next">
+												<button class="slider-btn next">
+													<img src="./img/icon-arrow.svg" alt="next slide">
+												</button>
+											</div>
+										</div>
+								</article>
+							</div>
+						</div>
+
+
+						<!-- If we need navigation buttons -->
+					
 					</div>
 				</div>
 			</div>
@@ -232,6 +304,24 @@
 		</section>
 	</footer>
 	<script src="./js/script.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script>
+		const swiper = new Swiper('.swiper', {
+			// Optional parameters
+			direction: 'horizontal',
+			loop: false,
+
+			// Navigation arrows
+			navigation: {
+				nextEl: '.swiper-next',
+				prevEl: '.swiper-prev',
+			},
+			spacebetween: 30,
+			initialSlide: 1,
+		});
+	</script>
 
 </body>
 

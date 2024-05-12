@@ -1,0 +1,19 @@
+.swiper {
+    overflow: visible !important;
+}
+.swiper-slide {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    max-width: 1070px;
+    width: 100%;
+    padding: 40px;
+}
+.swiper-wrapper {
+    height: auto;
+    align-items: center;
+    max-width: 1070px;
+    width: 100%;
+    overflow: visible;
+}
+

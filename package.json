@@ -30,6 +30,7 @@
     "gulp-sourcemaps": "^3.0.0",
     "normalize-scss": "^8.0.0",
     "normalize.css": "^8.0.1",
-    "postcss": "^8.2.8"
+    "postcss": "^8.2.8",
+    "swiper": "^11.1.1"
   }
 }

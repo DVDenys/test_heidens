@@ -1,5 +1,8 @@
 .reviews {
     padding: 141px 0;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
 }
 
 .reviews__content {
@@ -8,6 +11,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    min-width: 0;
+    max-width: 1920px;
 
     @media screen and (max-width: 375px) {
         padding: $spacing-small;
@@ -46,9 +51,9 @@
     justify-content: center;
     position: relative;
     gap: $spacing-large;
-    // max-width: 1980px;
+    max-width: 1920px;
     width: 100%;
-
+    overflow: hidden;
 }
 
 .slider__item {
@@ -59,10 +64,9 @@
     background-color: $color-silver;
     border-radius: 20px;
     padding: 60px;
-    max-width: 1070px;
 
     @media screen and (max-width: 3300px) {
-        display: none;
+        // display: none;
     }
 
     &.active {
